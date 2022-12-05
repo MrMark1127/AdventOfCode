@@ -40,10 +40,9 @@ function DoPuzzle(input) {
         })
         largestSums.push(curSum)
     })
-    largestSums.sort(function(a,b){return b - a})
+
+    largestSums.sort((a,b) => {return b - a})
     console.log(largestSums[0] + largestSums[1] + largestSums[2])
 }
-
-
 
 DoPuzzle(input)
